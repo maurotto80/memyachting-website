@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description:
     "Noleggio yacht e barche di lusso nel Golfo di Napoli e Costiera Amalfitana. Esperienze esclusive tra Capri, Ischia e Positano con M & M Yachting.",
   metadataBase: new URL("https://memyachting.com"),
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "M & M Yachting | Luxury Yacht Charter Napoli",
     description:
@@ -45,14 +48,13 @@ export const metadata: Metadata = {
     canonical: "https://memyachting.com",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="it">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
