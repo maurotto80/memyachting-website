@@ -17,9 +17,11 @@ export const metadata: Metadata = {
   description:
     "Noleggio yacht e barche di lusso nel Golfo di Napoli e Costiera Amalfitana. Esperienze esclusive tra Capri, Ischia e Positano con M & M Yachting.",
   metadataBase: new URL("https://memyachting.com"),
-  icons: {
-    icon: "/favicon.ico",
-  },
+    icons: {
+  icon: "/favicon.png",
+  shortcut: "/favicon.png",
+  apple: "/favicon.png",
+},
   openGraph: {
     title: "M & M Yachting | Luxury Yacht Charter Napoli",
     description:
