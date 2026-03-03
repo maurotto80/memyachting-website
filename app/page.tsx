@@ -41,8 +41,10 @@ export default function Home() {
   </Link>
 
   <p className="absolute bottom-6 text-xs opacity-50">
-    © {new Date().getFullYear()} M & M Yachting
-  </p>
+  © {new Date().getFullYear()} M & M Yachting —
+  <a href="/privacy-policy" className="underline ml-2">Privacy</a>
+  <a href="/terms" className="underline ml-4">Termini</a>
+</p>
 </div>
     </div>
   );
