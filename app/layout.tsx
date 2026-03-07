@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "M & M Yachting",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://memyachting.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "M & M Yachting - Yacht Charter Napoli",
