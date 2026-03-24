@@ -34,11 +34,19 @@ export default function Home() {
 </p>
 
   <Link
-    href="https://app.memyachting.com"
-    className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
-  >
-    ACCEDI ALL'APP
-  </Link>
+  href="https://app.memyachting.com"
+  onClick={() => {
+    if (typeof window !== "undefined") {
+      (window as any).trackEvent?.("access_app_click", {
+        event_category: "navigation",
+        event_label: "Accedi App Landing",
+      });
+    }
+  }}
+  className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+>
+  ACCEDI ALL'APP
+</Link>
 
   <p className="absolute bottom-6 text-xs opacity-50">
   © {new Date().getFullYear()} M & M Yachting —

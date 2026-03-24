@@ -72,6 +72,10 @@ export default function RootLayout({
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-8LDCY09NVY');
+
+window.trackEvent = function(name, params){
+  gtag('event', name, params);
+}
     `}
   </Script>
 
