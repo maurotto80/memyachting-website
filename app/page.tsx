@@ -51,6 +51,13 @@ export default function Home() {
   ACCEDI ALL'APP
 </Link>
 
+<Link
+  href="/blog"
+  className="border border-white/40 px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+>
+  BLOG NAUTICO
+</Link>
+
   <p className="absolute bottom-6 text-xs opacity-50">
   © {new Date().getFullYear()} M & M Yachting —
   <a href="/privacy-policy" target="_blank" className="underline ml-2">Privacy</a>
