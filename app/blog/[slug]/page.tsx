@@ -89,9 +89,9 @@ export default async function ArticlePage({
           {article.titleIt}
         </h1>
 
-        <p className="text-sm text-gray-500 mb-10">
-          {article.readingTime} min read
-        </p>
+        <p className="text-sm text-gray-500 mt-2">
+  ⏱ {article.readingTime} min di lettura
+</p>
 
         {/* BLOCKS */}
 
