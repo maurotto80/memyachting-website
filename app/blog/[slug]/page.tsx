@@ -1,6 +1,7 @@
 //app/blog/[slug]/page.tsx
 
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 export async function generateMetadata({ params }:any){
 
@@ -85,12 +86,19 @@ export default async function ArticlePage({
 
       <article className="max-w-3xl mx-auto px-6 py-16">
 
-        <h1 className="text-4xl font-light mb-6">
-          {article.titleIt}
-        </h1>
+  <Link
+    href="/blog"
+    className="inline-flex items-center text-sm text-gray-500 hover:text-black mb-6"
+  >
+    ← Torna agli articoli
+  </Link>
+
+  <h1 className="text-4xl font-light mb-6">
+    {article.titleIt}
+  </h1>
 
         <p className="text-sm text-gray-500 mt-2">
-  ⏱ {article.readingTime} min di lettura
+  ⏱ {article.readingTime} min read
 </p>
 
         {/* BLOCKS */}
