@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -22,9 +23,17 @@ export default function Home() {
       {/* CONTENT */}
 <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white px-6">
 
-  <h1 className="text-4xl md:text-6xl font-light tracking-[0.4em] mb-4">
-    M & M YACHTING
-  </h1>
+  <Image
+  src="/logo-bianco.png"
+  alt="M & M Yachting"
+  width={220}
+  height={80}
+  className="mb-6"
+/>
+
+<h1 className="text-4xl md:text-6xl font-light tracking-[0.4em] mb-4">
+  M & M YACHTING
+</h1>
 
   <p className="text-sm tracking-[0.6em] uppercase opacity-70 mb-6">
     Luxury Yacht Charter in Naples, Capri & Amalfi Coast <br />
