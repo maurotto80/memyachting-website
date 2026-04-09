@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }:any){
 
+  const { slug } = await params;
+
   const res = await fetch(
-    `https://api.memyachting.com/api/articles/${params.slug}`
+    `https://api.memyachting.com/api/articles/${slug}`
   );
 
   if(!res.ok){
@@ -48,10 +50,12 @@ async function getArticle(slug:string){
 export default async function ArticlePage({
   params
 }:{
-  params:{ slug:string }
+  params: Promise<{ slug:string }>
 }){
 
-  const article = await getArticle(params.slug);
+  const { slug } = await params;
+
+  const article = await getArticle(slug);
 
   if(!article) return notFound();
 
