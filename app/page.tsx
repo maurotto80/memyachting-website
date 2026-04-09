@@ -37,27 +37,31 @@ Private Boat Tours and Exclusive Sea Experiences
   Luxury experiences in the Gulf of Naples.
 </p>
 
-  <Link
-  href="https://app.memyachting.com"
-  onClick={() => {
-    if (typeof window !== "undefined") {
-      (window as any).trackEvent?.("access_app_click", {
-        event_category: "navigation",
-        event_label: "Accedi App Landing",
-      });
-    }
-  }}
-  className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
->
-  ACCEDI ALL'APP
-</Link>
+  <div className="flex flex-col gap-4">
 
-<Link
-  href="/blog"
-  className="border border-white/40 px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
->
-  BLOG NAUTICO
-</Link>
+  <Link
+    href="https://app.memyachting.com"
+    onClick={() => {
+      if (typeof window !== "undefined") {
+        (window as any).trackEvent?.("access_app_click", {
+          event_category: "navigation",
+          event_label: "Accedi App Landing",
+        });
+      }
+    }}
+    className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+  >
+    ACCEDI ALL'APP
+  </Link>
+
+  <Link
+    href="/blog"
+    className="border border-white/40 px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+  >
+    BLOG NAUTICO
+  </Link>
+
+</div>
 
   <p className="absolute bottom-6 text-xs opacity-50">
   © {new Date().getFullYear()} M & M Yachting —
