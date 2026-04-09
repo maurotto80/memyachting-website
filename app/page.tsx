@@ -9,18 +9,18 @@ export default function Home() {
 
       {/* BACKGROUND IMAGE */}
       <div
-  className="absolute inset-0 bg-cover bg-center z-0"
-  style={{
-    backgroundImage:
-      "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop')",
-  }}
-/>
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop')",
+        }}
+      />
 
       {/* OVERLAY DARK */}
-      <div className="absolute inset-0 bg-black/75 z-10" />
+      <div className="absolute inset-0 bg-black/75" />
 
       {/* CONTENT */}
-<div className="relative z-20 flex h-full flex-col items-center justify-center text-center text-white px-6">
+<div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white px-6">
 
   <h1 className="text-4xl md:text-6xl font-light tracking-[0.4em] mb-4">
     M & M YACHTING
