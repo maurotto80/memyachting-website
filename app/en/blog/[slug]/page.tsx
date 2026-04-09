@@ -1,4 +1,4 @@
-//app/blog/[slug]/page.tsx
+//app/en/blog/[slug]/page.tsx
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -18,17 +18,19 @@ export async function generateMetadata({ params }:any){
   const article = await res.json();
 
   return{
-    title: article.titleIt,
-    description: article.excerptIt,
-    openGraph:{
-      title: article.titleIt,
-      description: article.excerptIt,
-      alternates:{
-  languages:{
-    it:`https://memyachting.com/blog/${slug}`,
-    en:`https://memyachting.com/en/blog/${slug}`
-  }
-},
+  title: article.titleEn || article.titleIt,
+  description: article.excerptEn || article.excerptIt,
+
+  alternates:{
+    languages:{
+      it:`https://memyachting.com/blog/${slug}`,
+      en:`https://memyachting.com/en/blog/${slug}`
+    }
+  },
+
+  openGraph:{
+    title: article.titleEn || article.titleIt,
+    description: article.excerptEn || article.excerptIt,
       images:[
   article.coverImage?.startsWith("http")
     ? article.coverImage
@@ -83,7 +85,7 @@ export default async function ArticlePage({
       : `https://api.memyachting.com${article.coverImage}`
   }
   className="w-full h-full object-cover"
-  alt={article.titleIt}
+  alt={article.titleEn || article.titleIt}
 />
 
         </div>
@@ -94,25 +96,25 @@ export default async function ArticlePage({
 
   <div className="flex justify-between items-center mb-6">
 
-    <Link
-      href="/blog"
-      className="inline-flex items-center text-sm text-gray-500 hover:text-black"
-    >
-      ← Torna agli articoli
-    </Link>
+  <Link
+    href="/en/blog"
+    className="inline-flex items-center text-sm text-gray-500 hover:text-black"
+  >
+    ← Back to articles
+  </Link>
 
-    <Link
-      href={`/en/blog/${slug}`}
-      className="text-sm text-gray-500 hover:text-black"
-    >
-      EN
-    </Link>
+  <Link
+    href={`/blog/${slug}`}
+    className="text-sm text-gray-500 hover:text-black"
+  >
+    IT
+  </Link>
 
-  </div>
+</div>
 
   <h1 className="text-4xl font-light mb-6">
-    {article.titleIt}
-  </h1>
+  {article.titleEn || article.titleIt}
+</h1>
 
         <p className="text-sm text-gray-500 mt-2">
   ⏱ {article.readingTime} min read
@@ -130,7 +132,7 @@ export default async function ArticlePage({
                 key={block.id}
                 className="mb-6 leading-relaxed text-lg"
               >
-                {block.contentIt?.text}
+                {block.contentEn?.text || block.contentIt?.text}
               </p>
 
             );
@@ -165,14 +167,14 @@ export default async function ArticlePage({
         <div className="mt-16 border-t pt-10 text-center">
 
           <p className="text-lg mb-6">
-            Scopri queste destinazioni in barca
+            Discover these destinations by boat
           </p>
 
           <a
             href="https://app.memyachting.com"
             className="border border-black px-8 py-3 hover:bg-black hover:text-white transition"
           >
-            Prenota una barca
+            Book a boat
           </a>
 
         </div>
