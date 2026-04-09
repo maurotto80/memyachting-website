@@ -6,7 +6,7 @@ async function getArticles() {
   const res = await fetch(
     "https://api.memyachting.com/api/articles",
     {
-      next: { revalidate: 60 }
+      next: { revalidate: 1 }
     }
   );
 
