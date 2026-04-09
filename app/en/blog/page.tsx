@@ -20,9 +20,18 @@ export default async function BlogPage() {
   const articles = await getArticles();
 
   return (
-    <main className="min-h-screen bg-white text-black">
+  <main className="min-h-screen bg-white text-black">
 
-      {/* HERO */}
+    <div className="max-w-6xl mx-auto px-6 pt-6">
+      <Link
+        href="/"
+        className="text-sm text-gray-500 hover:text-black"
+      >
+        ← Back to Home
+      </Link>
+    </div>
+
+    {/* HERO */}
 
       <section className="bg-black text-white py-20 text-center">
 
