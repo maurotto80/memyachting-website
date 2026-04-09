@@ -27,7 +27,8 @@ export default function Home() {
   </h1>
 
   <p className="text-sm tracking-[0.6em] uppercase opacity-70 mb-6">
-    Coming Soon
+    Luxury Yacht Charter in Naples, Capri & Amalfi Coast
+Private Boat Tours and Exclusive Sea Experiences
   </p>
 
   <p className="text-lg md:text-xl font-light opacity-80 mb-10 max-w-xl">
