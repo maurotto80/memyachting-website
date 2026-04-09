@@ -40,12 +40,7 @@ export default function Home() {
     Private Boat Tours and Exclusive Sea Experiences
   </p>
 
-  <p className="text-lg md:text-xl font-light opacity-80 mb-10 max-w-xl">
-  Discover Capri, Ischia & the Amalfi Coast by Yacht.
-  <br />
-  Luxury experiences in the Gulf of Naples.
-</p>
-
+  
   <div className="flex flex-col gap-4">
 
   <Link
