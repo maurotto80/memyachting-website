@@ -1,3 +1,5 @@
+//app/blog/[slug]/page.tsx
+
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }:any){
@@ -18,7 +20,11 @@ export async function generateMetadata({ params }:any){
     openGraph:{
       title: article.titleIt,
       description: article.excerptIt,
-      images:[article.coverImage]
+      images:[
+  article.coverImage?.startsWith("http")
+    ? article.coverImage
+    : `https://api.memyachting.com${article.coverImage}`
+]
     }
   };
 
@@ -59,10 +65,15 @@ export default async function ArticlePage({
 
         <div className="h-[420px] overflow-hidden">
 
-          <img
-            src={article.coverImage}
-            className="w-full h-full object-cover"
-          />
+         <img
+  src={
+    article.coverImage?.startsWith("http")
+      ? article.coverImage
+      : `https://api.memyachting.com${article.coverImage}`
+  }
+  className="w-full h-full object-cover"
+  alt={article.titleIt}
+/>
 
         </div>
 
@@ -102,10 +113,15 @@ export default async function ArticlePage({
             return(
 
               <img
-                key={block.id}
-                src={block.contentIt?.url}
-                className="my-10 rounded-lg"
-              />
+  key={block.id}
+  src={
+    block.contentIt?.url?.startsWith("http")
+      ? block.contentIt.url
+      : `https://api.memyachting.com${block.contentIt?.url}`
+  }
+  className="my-10 rounded-lg"
+  alt=""
+/>
 
             );
 

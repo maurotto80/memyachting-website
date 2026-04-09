@@ -1,3 +1,5 @@
+//app/blog/page.tsx
+
 import Link from "next/link";
 
 async function getArticles() {
@@ -56,9 +58,14 @@ export default async function BlogPage() {
                   <div className="overflow-hidden rounded-lg">
 
                     <img
-                      src={article.coverImage}
-                      className="w-full h-56 object-cover group-hover:scale-105 transition duration-300"
-                    />
+  src={
+    article.coverImage?.startsWith("http")
+      ? article.coverImage
+      : `https://api.memyachting.com${article.coverImage}`
+  }
+  className="w-full h-56 object-cover group-hover:scale-105 transition duration-300"
+  alt={article.titleIt}
+/>
 
                   </div>
 
