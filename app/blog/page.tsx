@@ -22,14 +22,23 @@ export default async function BlogPage() {
   return (
   <main className="min-h-screen bg-white text-black">
 
-    <div className="max-w-6xl mx-auto px-6 pt-6">
-      <Link
-        href="/"
-        className="text-sm text-gray-500 hover:text-black"
-      >
-        ← Torna alla Home
-      </Link>
-    </div>
+    <div className="max-w-6xl mx-auto px-6 pt-6 flex justify-between items-center">
+
+  <Link
+    href="/"
+    className="text-sm text-gray-500 hover:text-black"
+  >
+    ← Torna alla Home
+  </Link>
+
+  <Link
+    href="/en/blog"
+    className="text-sm text-gray-500 hover:text-black"
+  >
+    EN
+  </Link>
+
+</div>
 
     {/* HERO */}
 
