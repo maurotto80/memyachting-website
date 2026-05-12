@@ -41,6 +41,10 @@ export const metadata: Metadata = {
     description:
       "Esperienze esclusive in yacht durante l’America’s Cup Napoli 2027.",
 
+       type: "website",
+
+  siteName: "M & M Yachting",
+
 
 
     url: "https://memyachting.com/americas-cup-napoli",
