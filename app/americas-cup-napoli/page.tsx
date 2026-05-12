@@ -1,8 +1,9 @@
-//app/americas-cup-napoli
+//app/americas-cup-napoli/page.tsx
 
 import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollButtons from "@/components/ScrollButtons";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title:
@@ -58,6 +59,68 @@ export const metadata: Metadata = {
 export default function AmericasCupNapoliPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+        <Script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Event",
+
+      name: "America's Cup Napoli 2027",
+
+      description:
+        "Luxury yacht experiences and regatta viewing during the America's Cup Naples 2027 in the Gulf of Naples.",
+
+      eventAttendanceMode:
+        "https://schema.org/OfflineEventAttendanceMode",
+
+      eventStatus:
+        "https://schema.org/EventScheduled",
+
+      location: {
+        "@type": "Place",
+
+        name: "Gulf of Naples",
+
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Naples",
+          addressCountry: "IT",
+        },
+      },
+
+      image: [
+        "https://memyachting.com/americas-cup/hero.jpg",
+      ],
+
+      organizer: {
+        "@type": "Organization",
+
+        name: "M & M Yachting",
+
+        url: "https://memyachting.com",
+      },
+
+      performer: {
+        "@type": "SportsOrganization",
+        name: "America's Cup",
+      },
+
+      offers: {
+        "@type": "Offer",
+
+        url: "https://memyachting.com/americas-cup-napoli",
+
+        availability:
+          "https://schema.org/PreOrder",
+
+        price: "0",
+
+        priceCurrency: "EUR",
+      },
+    }),
+  }}
+></Script>
         <ScrollButtons />
 
         {/* TOP BAR */}

@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollButtons from "@/components/ScrollButtons";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title:
@@ -32,29 +33,107 @@ export const metadata: Metadata = {
   },
 },
 
-  openGraph: {
-    title:
-      "America's Cup Naples 2027 | M & M Yachting",
+ openGraph: {
+  title:
+    "America's Cup Naples 2027 | Yacht Experiences & Regatta Viewing | M & M Yachting",
 
-    description:
-      "Exclusive yacht experiences during the America's Cup Naples 2027.",
+  description:
+    "Exclusive yacht experiences during the America's Cup Naples 2027.",
 
-    url: "https://memyachting.com/en/americas-cup-naples",
+  url: "https://memyachting.com/en/americas-cup-naples",
 
-    images: [
-      {
-        url: "https://memyachting.com/americas-cup/hero.jpg",
-        width: 1200,
-        height: 630,
-        alt: "America's Cup Naples 2027",
-      },
-    ],
-  },
+  images: [
+    {
+      url: "https://memyachting.com/americas-cup/hero.jpg",
+      width: 1200,
+      height: 630,
+      alt: "America's Cup Naples 2027",
+    },
+  ],
+},
+
+twitter: {
+  card: "summary_large_image",
+
+  title:
+    "America's Cup Naples 2027 | Yacht Experiences & Regatta Viewing",
+
+  description:
+    "Exclusive yacht experiences during the America's Cup Naples 2027 in the Gulf of Naples.",
+
+  images: [
+    "https://memyachting.com/americas-cup/hero.jpg"
+  ],
+},
 };
+
+
 
 export default function AmericasCupNaplesPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+        <Script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Event",
+
+      name: "America's Cup Naples 2027",
+
+      description:
+        "Luxury yacht experiences and regatta viewing during the America's Cup Naples 2027 in the Gulf of Naples.",
+
+      eventAttendanceMode:
+        "https://schema.org/OfflineEventAttendanceMode",
+
+      eventStatus:
+        "https://schema.org/EventScheduled",
+
+      location: {
+        "@type": "Place",
+
+        name: "Gulf of Naples",
+
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Naples",
+          addressCountry: "IT",
+        },
+      },
+
+      image: [
+        "https://memyachting.com/americas-cup/hero.jpg",
+      ],
+
+      organizer: {
+        "@type": "Organization",
+
+        name: "M & M Yachting",
+
+        url: "https://memyachting.com",
+      },
+
+      performer: {
+        "@type": "SportsOrganization",
+        name: "America's Cup",
+      },
+
+      offers: {
+        "@type": "Offer",
+
+        url: "https://memyachting.com/en/americas-cup-naples",
+
+        availability:
+          "https://schema.org/PreOrder",
+
+        price: "0",
+
+        priceCurrency: "EUR",
+      },
+    }),
+  }}
+></Script>
         <ScrollButtons />
 
       {/* TOP BAR */}
