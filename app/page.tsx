@@ -82,7 +82,7 @@ export default function Home() {
   © {new Date().getFullYear()} M & M Yachting —
   
   <a
-    href="https://app.memyachting.com/PrivacyPolicy"
+    href="https://app.memyachting.com/privacy-policy"
     target="_blank"
     rel="noopener noreferrer"
     className="underline ml-2"
@@ -91,7 +91,7 @@ export default function Home() {
   </a>
 
   <a
-    href="https://app.memyachting.com/Terms"
+    href="https://app.memyachting.com/terms"
     target="_blank"
     rel="noopener noreferrer"
     className="underline ml-4"
