@@ -162,20 +162,46 @@ export default async function ArticlePage({
 
         {/* CTA */}
 
-        <div className="mt-16 border-t pt-10 text-center">
+<div className="mt-16 border-t pt-10 text-center">
 
-          <p className="text-lg mb-6">
-            Scopri queste destinazioni in barca
-          </p>
+  {slug === "americas-cup-napoli-2027" ? (
 
-          <a
-            href="https://app.memyachting.com"
-            className="border border-black px-8 py-3 hover:bg-black hover:text-white transition"
-          >
-            Prenota una barca
-          </a>
+    <>
 
-        </div>
+      <p className="text-lg mb-6">
+        Scopri le esperienze dedicate
+        all&apos;America&apos;s Cup Napoli 2027
+      </p>
+
+      <a
+        href="/americas-cup-napoli"
+        className="border border-black px-8 py-3 hover:bg-black hover:text-white transition"
+      >
+        America&apos;s Cup Experience
+      </a>
+
+    </>
+
+  ) : (
+
+    <>
+
+      <p className="text-lg mb-6">
+        Scopri queste destinazioni in barca
+      </p>
+
+      <a
+        href="https://app.memyachting.com"
+        className="border border-black px-8 py-3 hover:bg-black hover:text-white transition"
+      >
+        Prenota una barca
+      </a>
+
+    </>
+
+  )}
+
+</div>
 
       </article>
 
