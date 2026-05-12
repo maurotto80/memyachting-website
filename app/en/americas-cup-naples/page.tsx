@@ -6,14 +6,31 @@ import ScrollButtons from "@/components/ScrollButtons";
 
 export const metadata: Metadata = {
   title:
-    "America's Cup Naples 2027 | Luxury Yacht Experiences | M & M Yachting",
+    "America's Cup Naples 2027 | Yacht Experiences & Regatta Viewing | M & M Yachting",
 
   description:
     "Experience the America's Cup Naples 2027 from the sea with exclusive yacht experiences, sunset aperitifs and immersive regatta days in the Gulf of Naples.",
-
+  
+  keywords: [
+  "America's Cup Naples 2027",
+  "America's Cup yacht experience",
+  "Naples yacht charter",
+  "Luxury yacht Naples",
+  "Regatta viewing Naples",
+  "Gulf of Naples yacht experience",
+  "Capri yacht experience",
+  "America's Cup hospitality",
+  "Luxury boat experience Italy",
+  "America's Cup Mediterranean"
+],
   alternates: {
-    canonical: "https://memyachting.com/en/americas-cup-naples",
+  canonical: "https://memyachting.com/en/americas-cup-naples",
+
+  languages: {
+    it: "https://memyachting.com/americas-cup-napoli",
+    en: "https://memyachting.com/en/americas-cup-naples",
   },
+},
 
   openGraph: {
     title:
@@ -408,6 +425,50 @@ export default function AmericasCupNaplesPage() {
       exclusive moments designed for guests
       from all over the world.
     </p>
+
+  </div>
+
+</section>
+
+{/* SEO CONTENT */}
+<section className="bg-black px-6 py-24 border-t border-white/10">
+
+  <div className="max-w-5xl mx-auto">
+
+    <h2 className="text-3xl md:text-5xl font-light mb-10">
+      America&apos;s Cup Naples 2027 Yacht Experiences
+    </h2>
+
+    <div className="space-y-8 text-white/70 leading-relaxed text-lg">
+
+      <p>
+        The America&apos;s Cup Naples 2027 will become
+        one of the most important international events
+        ever hosted in the Gulf of Naples.
+      </p>
+
+      <p>
+        During the regatta weeks,
+        M & M Yachting will offer luxury yacht experiences,
+        exclusive aperitifs, regatta viewing days
+        and unforgettable moments at sea.
+      </p>
+
+      <p>
+        Guests will experience the races directly from the water
+        between Naples, Capri, Posillipo
+        and the Amalfi Coast aboard selected yachts
+        and luxury boats.
+      </p>
+
+      <p>
+        These experiences are designed
+        for international guests looking
+        for an exclusive way to enjoy
+        the America&apos;s Cup Naples 2027.
+      </p>
+
+    </div>
 
   </div>
 

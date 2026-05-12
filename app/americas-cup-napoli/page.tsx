@@ -6,14 +6,32 @@ import ScrollButtons from "@/components/ScrollButtons";
 
 export const metadata: Metadata = {
   title:
-    "America's Cup Napoli 2027 | Luxury Yacht Experiences | M & M Yachting",
+    "America's Cup Napoli 2027 | Yacht Experiences & Regatta Viewing | M & M Yachting",
 
   description:
     "Vivi l’America’s Cup Napoli 2027 dal mare con esperienze esclusive in yacht, aperitivi al tramonto e giornate tra i campi di regata nel Golfo di Napoli.",
 
+        keywords: [
+  "America's Cup Napoli 2027",
+  "America's Cup Naples 2027",
+  "America's Cup yacht experience",
+  "Napoli yacht charter",
+  "Luxury yacht Naples",
+  "Regatta viewing Naples",
+  "Gulf of Naples yacht experience",
+  "Capri yacht experience",
+  "America's Cup hospitality",
+  "Luxury boat experience Naples"
+],
+
   alternates: {
-    canonical: "https://memyachting.com/americas-cup-napoli",
+  canonical: "https://memyachting.com/americas-cup-napoli",
+
+  languages: {
+    it: "https://memyachting.com/americas-cup-napoli",
+    en: "https://memyachting.com/en/americas-cup-naples",
   },
+},
 
   openGraph: {
     title:
@@ -22,11 +40,13 @@ export const metadata: Metadata = {
     description:
       "Esperienze esclusive in yacht durante l’America’s Cup Napoli 2027.",
 
+
+
     url: "https://memyachting.com/americas-cup-napoli",
 
     images: [
       {
-        url: "https://memyachting.com/og-image.jpg",
+        url: "https://memyachting.com/americas-cup/hero.jpg",
         width: 1200,
         height: 630,
         alt: "America's Cup Napoli 2027",
