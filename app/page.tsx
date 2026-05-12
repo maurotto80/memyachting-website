@@ -80,8 +80,24 @@ export default function Home() {
 
   <p className="absolute bottom-6 text-xs opacity-50">
   © {new Date().getFullYear()} M & M Yachting —
-  <a href="/privacy-policy" target="_blank" className="underline ml-2">Privacy</a>
-  <a href="/terms" target="_blank" className="underline ml-4">Termini</a>
+  
+  <a
+    href="https://app.memyachting.com/PrivacyPolicy"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline ml-2"
+  >
+    Privacy
+  </a>
+
+  <a
+    href="https://app.memyachting.com/Terms"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline ml-4"
+  >
+    Termini
+  </a>
 </p>
 </div>
     </div>
