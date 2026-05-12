@@ -8,14 +8,17 @@ export default function Home() {
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
 
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop')",
-        }}
-      />
+      {/* BACKGROUND VIDEO */}
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  className="absolute inset-0 h-full w-full object-cover"
+>
+  <source src="/videos/hero.mp4" type="video/mp4" />
+</video>
 
       {/* OVERLAY DARK */}
       <div className="absolute inset-0 bg-black/75" />
