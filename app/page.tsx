@@ -8,13 +8,15 @@ export default function Home() {
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
 
-      {/* BACKGROUND VIDEO */}
+     {/* BACKGROUND VIDEO */}
 <video
   autoPlay
   muted
   loop
   playsInline
-  preload="auto"
+  webkit-playsinline="true"
+  preload="metadata"
+  poster="/hero-poster.jpg"
   className="absolute inset-0 h-full w-full object-cover"
 >
   <source src="/videos/hero.mp4" type="video/mp4" />
