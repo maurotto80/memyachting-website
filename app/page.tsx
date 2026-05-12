@@ -52,7 +52,7 @@ export default function Home() {
   </p>
 
   
-  <div className="flex flex-col gap-4">
+  <div className="flex flex-col gap-4 w-full max-w-md">
 
   <Link
     href="https://app.memyachting.com"
@@ -68,6 +68,13 @@ export default function Home() {
   >
     ACCEDI ALL'APP
   </Link>
+
+  <Link
+  href="/americas-cup-napoli"
+  className="border border-yellow-400 bg-yellow-400/10 px-8 py-4 text-sm tracking-[0.25em] uppercase hover:bg-yellow-400 hover:text-black transition-all duration-300"
+>
+  America&apos;s Cup Napoli 2027
+</Link>
 
   <Link
     href="/blog"
