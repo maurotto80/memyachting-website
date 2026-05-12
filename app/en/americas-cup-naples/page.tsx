@@ -2,6 +2,7 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import ScrollButtons from "@/components/ScrollButtons";
 
 export const metadata: Metadata = {
   title:
@@ -37,6 +38,7 @@ export const metadata: Metadata = {
 export default function AmericasCupNaplesPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+        <ScrollButtons />
 
       {/* TOP BAR */}
       <div className="absolute top-6 left-0 right-0 z-20 max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -94,12 +96,12 @@ export default function AmericasCupNaplesPage() {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
 
-            <Link
-              href="https://app.memyachting.com"
-              className="border border-white px-8 py-4 text-sm tracking-[0.2em] uppercase hover:bg-white hover:text-black transition"
-            >
-              Discover Experiences
-            </Link>
+            <a
+  href="#experiences"
+  className="border border-white px-8 py-4 text-sm tracking-[0.2em] uppercase hover:bg-white hover:text-black transition"
+>
+  Discover Experiences
+</a>
 
             <Link
               href="/en/blog"
@@ -113,6 +115,303 @@ export default function AmericasCupNaplesPage() {
         </div>
 
       </section>
+
+      {/* EXPERIENCES */}
+<section
+  id="experiences"
+  className="bg-black py-24 px-6"
+>
+
+  <div className="max-w-7xl mx-auto">
+
+    <div className="text-center mb-20">
+
+      <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-4">
+        Exclusive Experiences
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-light mb-8">
+        Experience the America&apos;s Cup from the Sea
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-80">
+        During the America&apos;s Cup Naples 2027,
+        M & M Yachting will offer exclusive yacht experiences
+        to enjoy the regattas from a unique perspective
+        in the Gulf of Naples.
+      </p>
+
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* CARD 1 */}
+      <div className="border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+
+        <div className="text-5xl mb-6">
+          🍸
+        </div>
+
+        <h3 className="text-2xl font-light mb-4">
+          Sunset Aperitif
+        </h3>
+
+        <p className="opacity-70 leading-relaxed">
+          Exclusive sunset aperitifs in the Gulf of Naples
+          during the regatta days,
+          with premium drinks, music
+          and unforgettable sea views.
+        </p>
+
+      </div>
+
+      {/* CARD 2 */}
+      <div className="border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+
+        <div className="text-5xl mb-6">
+          ⛵
+        </div>
+
+        <h3 className="text-2xl font-light mb-4">
+          Regatta Viewing
+        </h3>
+
+        <p className="opacity-70 leading-relaxed">
+          Experience the excitement of the America&apos;s Cup
+          directly from the sea,
+          sailing around the regatta areas
+          aboard our yachts.
+        </p>
+
+      </div>
+
+      {/* CARD 3 */}
+      <div className="border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+
+        <div className="text-5xl mb-6">
+          🛥️
+        </div>
+
+        <h3 className="text-2xl font-light mb-4">
+          Luxury Day Experience
+        </h3>
+
+        <p className="opacity-70 leading-relaxed">
+          Full yacht days between regattas,
+          relaxation, exclusive views
+          and itineraries across Naples,
+          Capri and the Amalfi Coast.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* WHY FROM THE SEA */}
+<section className="relative py-32 px-6 overflow-hidden">
+
+  {/* BACKGROUND */}
+  <div
+    className="absolute inset-0 bg-cover bg-center scale-105"
+    style={{
+      backgroundImage: "url('/americas-cup/hero.jpg')",
+    }}
+  />
+
+  {/* OVERLAY */}
+  <div className="absolute inset-0 bg-black/80" />
+
+  {/* CONTENT */}
+  <div className="relative z-10 max-w-5xl mx-auto text-center">
+
+    <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+      Why From The Sea
+    </p>
+
+    <h2 className="text-4xl md:text-6xl font-light leading-tight mb-10">
+      A Completely
+      <br />
+      Different Perspective
+    </h2>
+
+    <p className="text-lg md:text-2xl leading-relaxed opacity-80 mb-8">
+      Experiencing the America&apos;s Cup from the sea means
+      being fully immersed in the energy of the regattas,
+      surrounded by the unique scenery of the Gulf of Naples.
+    </p>
+
+    <p className="max-w-4xl mx-auto text-base md:text-lg leading-relaxed opacity-70">
+      Away from the crowds, aboard our yachts,
+      guests will enjoy exclusive days combining sport,
+      sea, relaxation, sunset aperitifs
+      and spectacular views of the regatta areas
+      with Capri, Posillipo and Mount Vesuvius in the background.
+    </p>
+
+  </div>
+
+</section>
+
+{/* FLEET PREVIEW */}
+<section className="bg-black py-32 px-6">
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+
+      <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+        Selected Fleet
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-light mb-8">
+        Princess 65 Fly
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
+        One of the selected yachts designed
+        to experience the America&apos;s Cup Naples 2027
+        through exclusive luxury hospitality,
+        regatta viewing and unforgettable moments at sea.
+      </p>
+
+    </div>
+
+    {/* IMAGE GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {/* IMAGE 1 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/princess-65-1.jpg"
+          alt="Princess 65 Fly"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+      {/* IMAGE 2 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/princess-65-2.jpg"
+          alt="Princess 65 Fly"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* WAITLIST CTA */}
+<section className="relative py-32 px-6 overflow-hidden">
+
+  {/* BACKGROUND */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-950 to-black" />
+
+  {/* CONTENT */}
+  <div className="relative z-10 max-w-4xl mx-auto text-center">
+
+    <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+      America&apos;s Cup Naples 2027
+    </p>
+
+    <h2 className="text-4xl md:text-6xl font-light leading-tight mb-10">
+      Reserve Your
+      <br />
+      Place at Sea
+    </h2>
+
+    <p className="text-lg md:text-2xl leading-relaxed opacity-80 mb-12">
+      Contact us to receive early information
+      about the exclusive experiences available
+      during the America&apos;s Cup Naples 2027.
+    </p>
+
+    <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+
+      {/* WHATSAPP */}
+      <a
+        href="https://wa.me/393351004423"
+        target="_blank"
+        className="border border-white px-10 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300"
+      >
+        WhatsApp Concierge
+      </a>
+
+      {/* APP */}
+      <a
+        href="https://app.memyachting.com"
+        target="_blank"
+        className="border border-white/30 px-10 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300"
+      >
+        Open App
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* NAPLES ATMOSPHERE */}
+<section className="relative py-40 px-6 overflow-hidden">
+
+  {/* BACKGROUND */}
+  <div
+    className="absolute inset-0 bg-cover bg-center scale-105"
+    style={{
+      backgroundImage: "url('/americas-cup/hero.jpg')",
+    }}
+  />
+
+  {/* OVERLAY */}
+  <div className="absolute inset-0 bg-black/85" />
+
+  {/* CONTENT */}
+  <div className="relative z-10 max-w-5xl mx-auto text-center">
+
+    <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+      Naples • Capri • Amalfi Coast
+    </p>
+
+    <h2 className="text-4xl md:text-6xl font-light leading-tight mb-10">
+      More Than
+      <br />
+      A Regatta
+    </h2>
+
+    <p className="text-lg md:text-2xl leading-relaxed opacity-80 mb-8">
+      The America&apos;s Cup Naples 2027
+      will not only be a sporting event,
+      but an unforgettable Mediterranean experience.
+    </p>
+
+    <p className="max-w-4xl mx-auto text-base md:text-lg leading-relaxed opacity-70">
+      Between luxury yachts, sunset aperitifs,
+      breathtaking coastlines and the atmosphere
+      of Naples by the sea,
+      M & M Yachting aims to create
+      exclusive moments designed for guests
+      from all over the world.
+    </p>
+
+  </div>
+
+</section>
 
     </main>
   );
