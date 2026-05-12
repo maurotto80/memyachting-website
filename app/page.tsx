@@ -8,19 +8,25 @@ export default function Home() {
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
 
-     {/* BACKGROUND VIDEO */}
+     {/* DESKTOP / TABLET VIDEO */}
 <video
   autoPlay
   muted
   loop
   playsInline
-  webkit-playsinline="true"
-  preload="metadata"
-  poster="/hero-poster.jpg"
-  className="absolute inset-0 h-full w-full object-cover"
+  preload="auto"
+  className="absolute inset-0 hidden md:block h-full w-full object-cover"
 >
   <source src="/videos/hero.mp4" type="video/mp4" />
 </video>
+
+{/* MOBILE IMAGE */}
+<div
+  className="absolute inset-0 block md:hidden bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/hero-poster.jpg')",
+  }}
+/>
 
       {/* OVERLAY DARK */}
       <div className="absolute inset-0 bg-black/75" />
