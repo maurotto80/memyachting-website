@@ -164,20 +164,52 @@ export default async function ArticlePage({
 
         {/* CTA */}
 
-        <div className="mt-16 border-t pt-10 text-center">
+<div className="mt-16 border-t pt-10 text-center">
 
-          <p className="text-lg mb-6">
-            Discover these destinations by boat
-          </p>
+  {slug === "americas-cup-napoli-2027" ? (
 
-          <a
-            href="https://app.memyachting.com"
-            className="border border-black px-8 py-3 hover:bg-black hover:text-white transition"
-          >
-            Book a boat
-          </a>
+    <>
+      <p className="text-lg mb-6">
+        Experience the America&apos;s Cup Naples 2027 from the sea
+      </p>
 
-        </div>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+
+        <a
+          href="/en/americas-cup-naples"
+          className="border border-black px-8 py-3 hover:bg-black hover:text-white transition"
+        >
+          Discover America&apos;s Cup Experiences
+        </a>
+
+        <a
+          href="https://app.memyachting.com"
+          className="border border-black/20 px-8 py-3 hover:bg-black hover:text-white transition"
+        >
+          Open App
+        </a>
+
+      </div>
+    </>
+
+  ) : (
+
+    <>
+      <p className="text-lg mb-6">
+        Discover these destinations by boat
+      </p>
+
+      <a
+        href="https://app.memyachting.com"
+        className="border border-black px-8 py-3 hover:bg-black hover:text-white transition"
+      >
+        Book a boat
+      </a>
+    </>
+
+  )}
+
+</div>
 
       </article>
 
