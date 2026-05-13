@@ -139,22 +139,47 @@ export default async function ArticlePage({
 
           if(block.type==="image"){
 
-            return(
-
-              <img
-  key={block.id}
-  src={
+  const imageUrl =
     block.contentIt?.url?.startsWith("http")
       ? block.contentIt.url
-      : `https://api.memyachting.com${block.contentIt?.url}`
-  }
-  className="my-10 rounded-lg"
-  alt=""
-/>
+      : `https://api.memyachting.com${block.contentIt?.url}`;
 
-            );
+  return(
 
-          }
+    <figure
+      key={block.id}
+      className="my-12"
+    >
+
+      <div className="overflow-hidden rounded-2xl bg-zinc-100">
+
+        <img
+          src={imageUrl}
+          alt={article.titleIt}
+          className="
+            w-full
+            object-cover
+            transition duration-700
+            hover:scale-[1.02]
+          "
+          loading="lazy"
+        />
+
+      </div>
+
+      {block.contentIt?.caption && (
+
+        <figcaption className="mt-3 text-sm text-gray-500 text-center">
+          {block.contentIt.caption}
+        </figcaption>
+
+      )}
+
+    </figure>
+
+  );
+
+}
 
           return null;
 

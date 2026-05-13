@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black">
+    <div className="relative min-h-screen w-full bg-black overflow-y-auto">
 
      {/* DESKTOP / TABLET VIDEO */}
 <video
@@ -32,7 +32,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/75" />
 
       {/* CONTENT */}
-<div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white px-6">
+<div className="relative z-10 flex min-h-screen flex-col items-center justify-center text-center text-white px-6 py-16">
 
   <Image
   src="/logo-bianco.png"
