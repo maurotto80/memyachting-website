@@ -400,6 +400,126 @@ export default function AmericasCupNapoliPage() {
 
 </section>
 
+{/* UNIESSE 42 FLY */}
+<section className="bg-black py-32 px-6">
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+
+      <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+        Luxury Fleet
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-light mb-8">
+        Uniesse 42 Fly
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
+        Eleganza italiana, comfort raffinato e spazi esclusivi
+        per vivere le giornate dell&apos;America&apos;s Cup
+        tra relax, aperitivi al tramonto e navigazione
+        nel Golfo di Napoli.
+      </p>
+
+    </div>
+
+    {/* IMAGE GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {/* IMAGE 1 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/uniesse-42-1.jpg"
+          alt="Uniesse 42 Fly"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+      {/* IMAGE 2 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/uniesse-42-2.jpg"
+          alt="Uniesse 42 Fly"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* PANAMERA PY100 */}
+<section className="bg-black py-32 px-6">
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+
+      <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+        Maxi Rib Experience
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-light mb-8">
+        Panamera PY100
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
+        Uno dei maxi-rib più esclusivi della flotta,
+        perfetto per vivere l&apos;energia dell&apos;America&apos;s Cup
+        con navigazione sportiva, comfort premium
+        e una prospettiva unica sui campi di regata.
+      </p>
+
+    </div>
+
+    {/* IMAGE GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {/* IMAGE 1 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/panamera-py100-1.jpg"
+          alt="Panamera PY100"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+      {/* IMAGE 2 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/panamera-py100-2.jpg"
+          alt="Panamera PY100"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 {/* WAITLIST CTA */}
 <section className="relative py-32 px-6 overflow-hidden">
 
