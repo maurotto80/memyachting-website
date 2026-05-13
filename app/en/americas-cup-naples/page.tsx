@@ -307,6 +307,128 @@ export default function AmericasCupNaplesPage() {
 
 </section>
 
+{/* UNIESSE 42 FLY */}
+<section className="bg-black py-32 px-6">
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+
+      <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+        Luxury Fleet
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-light mb-8">
+        Uniesse 42 Fly
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
+        Italian elegance, refined comfort
+        and exclusive spaces designed
+        to enjoy the America&apos;s Cup Naples 2027
+        between relaxation, sunset aperitifs
+        and unforgettable moments at sea.
+      </p>
+
+    </div>
+
+    {/* IMAGE GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {/* IMAGE 1 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/uniesse-42-1.jpg"
+          alt="Uniesse 42 Fly"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+      {/* IMAGE 2 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/uniesse-42-2.jpg"
+          alt="Uniesse 42 Fly"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* PANAMERA PY100 */}
+<section className="bg-black py-32 px-6">
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+
+      <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+        Maxi Rib Experience
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-light mb-8">
+        Panamera PY100
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
+        One of the most exclusive maxi-ribs
+        selected for the America&apos;s Cup Naples 2027,
+        combining sporty navigation,
+        premium comfort and spectacular views
+        over the regatta areas of the Gulf of Naples.
+      </p>
+
+    </div>
+
+    {/* IMAGE GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {/* IMAGE 1 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/panamera-py100-1.jpg"
+          alt="Panamera PY100"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+      {/* IMAGE 2 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/panamera-py100-2.jpg"
+          alt="Panamera PY100"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 {/* WHY FROM THE SEA */}
 <section className="relative py-32 px-6 overflow-hidden">
 
