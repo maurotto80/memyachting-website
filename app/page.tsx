@@ -60,7 +60,7 @@ export default function Home() {
     }}
     className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
   >
-    ACCEDI ALL'APP
+    BOOK NOW
   </Link>
 
   <Link
