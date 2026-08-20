@@ -49,21 +49,38 @@ export default function Home() {
   <div className="flex flex-col gap-4 w-full max-w-md">
 
   <Link
-    href="https://app.memyachting.com"
-    onClick={() => {
-      if (typeof window !== "undefined") {
-        (window as any).trackEvent?.("access_app_click", {
-          event_category: "navigation",
-          event_label: "Accedi App Landing",
-        });
-      }
-    }}
-    className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
-  >
-    BOOK NOW
-  </Link>
+  href="https://app.memyachting.com"
+  onClick={() => {
+    if (typeof window !== "undefined") {
+      (window as any).trackEvent?.("access_app_click", {
+        event_category: "navigation",
+        event_label: "Accedi App Landing",
+      });
+    }
+  }}
+  className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+>
+  BOOK NOW
+</Link>
 
-  <Link
+<a
+  href="https://www.lemummarelle.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    if (typeof window !== "undefined") {
+      (window as any).trackEvent?.("stay_click", {
+        event_category: "navigation",
+        event_label: "Le Mummarelle",
+      });
+    }
+  }}
+  className="border border-white px-8 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+>
+  STAY
+</a>
+
+<Link
   href="/americas-cup-napoli"
   className="border border-yellow-400 bg-yellow-400/10 px-8 py-4 text-sm tracking-[0.25em] uppercase hover:bg-yellow-400 hover:text-black transition-all duration-300"
 >
