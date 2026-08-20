@@ -460,7 +460,7 @@ export default function AmericasCupNapoliPage() {
 
 </section>
 
-{/* PANAMERA PY100 */}
+{/* STINGHER 28 GT */}
 <section className="bg-black py-32 px-6">
 
   <div className="max-w-7xl mx-auto">
@@ -473,14 +473,15 @@ export default function AmericasCupNapoliPage() {
       </p>
 
       <h2 className="text-4xl md:text-6xl font-light mb-8">
-        Panamera PY100
+        Stingher 28 GT
       </h2>
 
       <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
-        Uno dei maxi-rib più esclusivi della flotta,
-        perfetto per vivere l&apos;energia dell&apos;America&apos;s Cup
-        con navigazione sportiva, comfort premium
-        e una prospettiva unica sui campi di regata.
+        Un maxi-rib sportivo ed elegante
+        selezionato per vivere l&apos;America&apos;s Cup Napoli 2027,
+        combinando prestazioni, comfort
+        e una prospettiva privilegiata sui campi di regata
+        del Golfo di Napoli.
       </p>
 
     </div>
@@ -492,8 +493,8 @@ export default function AmericasCupNapoliPage() {
       <div className="relative overflow-hidden">
 
         <img
-          src="/americas-cup/fleet/panamera-py100-1.jpg"
-          alt="Panamera PY100"
+          src="/americas-cup/fleet/stingher-28-gt-1.jpg"
+          alt="Stingher 28 GT"
           className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
         />
 
@@ -505,8 +506,8 @@ export default function AmericasCupNapoliPage() {
       <div className="relative overflow-hidden">
 
         <img
-          src="/americas-cup/fleet/panamera-py100-2.jpg"
-          alt="Panamera PY100"
+          src="/americas-cup/fleet/stingher-28-gt-2.jpg"
+          alt="Stingher 28 GT"
           className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
         />
 
