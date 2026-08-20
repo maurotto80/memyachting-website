@@ -368,7 +368,7 @@ export default function AmericasCupNaplesPage() {
 
 </section>
 
-{/* PANAMERA PY100 */}
+{/* STINGHER 28 GT */}
 <section className="bg-black py-32 px-6">
 
   <div className="max-w-7xl mx-auto">
@@ -381,15 +381,15 @@ export default function AmericasCupNaplesPage() {
       </p>
 
       <h2 className="text-4xl md:text-6xl font-light mb-8">
-        Panamera PY100
+        Stingher 28 GT
       </h2>
 
       <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
-        One of the most exclusive maxi-ribs
+        A sporty and elegant maxi-rib
         selected for the America&apos;s Cup Naples 2027,
-        combining sporty navigation,
-        premium comfort and spectacular views
-        over the regatta areas of the Gulf of Naples.
+        combining performance, comfort
+        and exceptional visibility over the regatta areas
+        of the Gulf of Naples.
       </p>
 
     </div>
@@ -401,8 +401,8 @@ export default function AmericasCupNaplesPage() {
       <div className="relative overflow-hidden">
 
         <img
-          src="/americas-cup/fleet/panamera-py100-1.jpg"
-          alt="Panamera PY100"
+          src="/americas-cup/fleet/stingher-28-gt-1.jpg"
+          alt="Stingher 28 GT"
           className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
         />
 
@@ -414,8 +414,8 @@ export default function AmericasCupNaplesPage() {
       <div className="relative overflow-hidden">
 
         <img
-          src="/americas-cup/fleet/panamera-py100-2.jpg"
-          alt="Panamera PY100"
+          src="/americas-cup/fleet/stingher-28-gt-2.jpg"
+          alt="Stingher 28 GT"
           className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
         />
 
