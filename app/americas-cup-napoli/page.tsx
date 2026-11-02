@@ -515,6 +515,68 @@ export default function AmericasCupNapoliPage() {
 
       </div>
 
+        </div>
+
+  </div>
+
+</section>
+
+{/* FIM 34 REGINA */}
+<section className="bg-black py-32 px-6">
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+
+      <p className="uppercase tracking-[0.4em] text-sm opacity-60 mb-6">
+        Italian Luxury Experience
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-light mb-8">
+        FiM 34 Regina
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed opacity-75">
+        Design italiano, eleganza contemporanea e comfort
+        esclusivo si incontrano a bordo del FiM 34 Regina.
+        Un&apos;imbarcazione raffinata, ideale per vivere
+        l&apos;America&apos;s Cup Napoli 2027 da una prospettiva
+        privilegiata, tra emozioni, relax e panorami
+        spettacolari nel Golfo di Napoli.
+      </p>
+
+    </div>
+
+    {/* IMAGE GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {/* IMAGE 1 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/fim-34-regina-1.jpg"
+          alt="FiM 34 Regina - Luxury Yacht Experience Napoli 2027"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
+      {/* IMAGE 2 */}
+      <div className="relative overflow-hidden">
+
+        <img
+          src="/americas-cup/fleet/fim-34-regina-2.jpg"
+          alt="FiM 34 Regina - Charter esclusivo America's Cup Napoli"
+          className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+      </div>
+
     </div>
 
   </div>
